@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 assignment</title>
+    <h3>
+        replace the single element in the sentence
+    </h3>
+</head>
+
+<body>
+
+    <script>
+        let str = ' i love JS it is simple thing!';
+        let newStr = str.replace('JS', 'JavaScript');
+        document.write(newStr);
+    </script>
+    <h3>
+        replacing all theelement in the sentence
+    </h3>
+    <script>
+        const phrase = 'I love my cat! cat are great! cat are cute ! cat can swim:P';
+        const stripped = phrase.replace(/cat/g, 'dog');
+        document.write(stripped);
+    </script>
+
+</body>
+
+</html>

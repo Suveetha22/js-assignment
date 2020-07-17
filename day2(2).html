@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Day 2 assignment</title>
+
+    <body>
+
+        <p>
+            <h3>Click the button to extract characters from the string</h3>
+        </p>
+        <button onclick="document.getElementById('sample').innerHTML= sub"> 
+        click me to display
+    </button>
+        <p id="sample">
+            <script>
+                var str = " suveetha ";
+                document.write(str);
+                var sub = str.substring(3, 6);
+            </script>
+            <h3>
+                splice method()
+            </h3>
+            <script>
+                var arr = ["one", "two", "three", "five"];
+                var result = arr.splice(3, 0, "four");
+                document.writeln(arr);
+            </script>
+
+    </body>
+
+</html>
