@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Change the Background Color Dynamically with JavaScript</title>
+    <script>
+        function changeBodyBg(color) {
+            setTimeout(() => {
+                document.body.style.background = color;
+                document.body.style.color = 'white';
+
+            }, 3000);
+        }
+        changecolour();
+    </script>
+</head>
+
+<body>
+    <h1 id="heading">This is a my first project n java script </h1>
+    <p>This is a paragraph of text.</p>
+
+    <div>
+        <label>Change Webpage Background To:</label>
+        <button type="button" onclick="changeBodyBg('yellow');">Yellow</button>
+        <button type="button" onclick="changeBodyBg('red');">red</button>
+        <button type="button" onclick="changeBodyBg('orange');">Orange</button>
+    </div>
+
+</body>
+
+</html>

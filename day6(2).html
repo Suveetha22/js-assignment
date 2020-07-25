@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeBodyBg(color) {
+            setTimeout(() => {
+                document.body.style.background = color;
+                document.body.style.color = 'white';
+
+            }, 3000);
+        }
+        changecolour();
+    </script>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myText").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1 id="heading"> project in java script </h1>
+    <p>
+        <h3>my second web page
+            <h3>
+    </p>
+    Name: <input type="text" id="myText" name="fname" value=""><br>
+
+    <p>Click the button to display the name of the name in the text .</p>
+
+    <button onclick="myFunction()">Name</button>
+
+    <p id="demo"></p>
+
+    <h4 id="time"></h4>
+    <p>
+        <em>this is to display the clock anddark mode and get a nme from user and print somestatement</em>
+    </p>
+
+    <div>
+        <label>Change Webpage Background To:</label>
+        <button type="button" onclick="changeBodyBg('black');">dark mode</button>
+    </div>
+    <script src="script/three.js">
+    </script>
+</body>
+
+</html>
