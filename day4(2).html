@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            name: 'Prasad',
+            age: 24,
+            hobby: 'Coding js ',
+            project: {
+                dicegame: 'two player dicegame use in javascript',
+            },
+        }
+
+        console.log(student.age);
+        console.log(student.hobby);
+        const {
+            name,
+            age,
+            project: {
+                dicegame
+            }
+        } = student;
+        console.log(name, age, dicegame)
+    </script>
+</body>
+
+</html>

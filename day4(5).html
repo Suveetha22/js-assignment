@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        a = +prompt("enter the numbet of sales:")
+        if (a >= 20000) {
+            console.log("the commission is 10%");
+            console.log("your sales is above 20000 yor are doing great job keep it up!!");
+            n = (a / 100 * 10);
+            console.log(`the total commission is:${n}`);
+
+        } else if (a >= 10001 && a <= 20000) {
+            console.log("the commission is 7%");
+            console.log("your sales is above 10000 and doing good try to reach above 20000");
+            n = (a / 100 * 7);
+            console.log(`the total commission is:${n}`);
+
+        } else if (a >= 5001 && a <= 10000) {
+            console.log("the commission is 5%");
+            console.log("your sales is above 50000 and better improve more");
+            n = (a / 100 * 5);
+            console.log(`the total commission is:${n}`);
+
+        } else if (a > 0 && a <= 5000) {
+            console.log("the commission is 2%");
+            console.log(" your salesn is below 5000 try to improve your sales ");
+            n = (a / 100 * 2);
+            console.log(`the total commission is:${n}`);
+
+        } else {
+            console.log("your salse value is below zero !!!! improve your sales");
+            console.log("you have no commission");
+
+        }
+    </script>
+
+</body>
+
+</html>

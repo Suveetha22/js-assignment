@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JavaScript program to calculate multiplication and division of two numbers </title>
+    <style type="text/css">
+        body {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        Number A : <input type="text" id="Number A" />
+        <br> Number B: <input type="text" id="Number B" /><br>
+        <input type="button" onClick="additionBy()" Value="addition" />
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="divideBy()" Value="Divide" />
+        <input type="button" onClick="squrerootBy()" Value="squre root" />
+        <input type="button" onClick="percentageBy()" Value="percentage" />
+    </form>
+    <p>The Result is : <br>
+        <span id="result"></span>
+    </p>
+    <script>
+        function additionBy() {
+            num1 = Number(document.getElementById("Number A").value);
+            num2 = Number(document.getElementById("Number B").value);
+            document.getElementById("result").innerHTML = (num1 + num2);
+        }
+
+        function multiplyBy() {
+            num1 = Number(document.getElementById("Number A").value);
+            console.log(num1);
+            num2 = Number(document.getElementById("Number B").value);
+            console.log(num2);
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+
+        function divideBy() {
+            num1 = Number(document.getElementById("Number A").value);
+            console.log(num1);
+            num2 = Number(document.getElementById("Number B").value);
+            console.log(num2);
+            document.getElementById("result").innerHTML = num1 / num2;
+        }
+
+        function squrerootBy() {
+            num1 = Number(document.getElementById("Number A").value);
+            console.log(num1);
+            document.getElementById("result").innerHTML = Math.sqrt(num1);
+        }
+
+        function percentageBy() {
+            num1 = Number(document.getElementById("Number A").value);
+            console.log(num1);
+            num2 = Number(document.getElementById("Number B").value);
+            console.log(num2);
+            document.getElementById("result").innerHTML = ((num2 / num1) * 100);
+        }
+    </script>
+</body>
+
+</html>
